@@ -1,0 +1,365 @@
+<section aria-labelledby="Blog-header-one">
+  <h2 class="sr-only" id="Blog-header-one">Blogmheader one</h2>
+  <div
+    class="items-center px-8 mt-12 lg:mt-24 mx-auto md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl"
+  >
+    <div class="lg:mx-auto pt-24">
+      <div>
+        <h1
+          class="text-3xl font-black text-white uppercase italic font-display"
+        >
+          Software Engineer
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="sr-only" id="blog-post-one">Blog post one</h2>
+  <main>
+    <div
+      class="mx-auto lg:flex px-8 my-6 md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl"
+    >
+      <div
+        class="gap-12 grid grid-cols-1 lg:grid-cols-3 border-t pt-6 border-zinc-700 w-full"
+      >
+        <div class="w-full mx-auto">
+          <div class="text-left space-y-3 flex flex-col">
+            <div class="text-left space-y-3">
+              <p class="text-zinc-400 text-lg">Location</p>
+              <span class="space-x-1 text-zinc-400 text-xs">
+                <time datetime="2023-03-16">Mariehamn / Åland Islands, FI</time>
+              </span>
+            </div>
+            <div class="text-left space-y-3">
+              <p class="text-zinc-400 text-lg">Type</p>
+              <span class="space-x-1 text-zinc-400 text-xs">
+                <time datetime="2023-03-16">Full time</time>
+              </span>
+            </div>
+            <div class="text-left space-y-3">
+              <p class="text-zinc-400 text-lg">Department</p>
+              <span class="space-x-1 text-zinc-400 text-xs">
+                <time datetime="2023-03-16">Engineering</time>
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-3 text-left mt-3">
+            <span class="isolate inline-flex rounded-2xl">
+              <a
+                href="#"
+                type="button"
+                class="relative transition duration-500 ease-in-out transform -ml-px inline-flex items-center border border-zinc-700 dark px-4 py-2 text-xs rounded-full bg-dark font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+              >
+                Apply now
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="w-full lg:col-span-2 ´">
+          <div x-data x-tabs class="mx-auto w-full">
+            <div x-tabs:list class="-mb-px flex items-stretch w-full">
+              <button
+                x-tabs:tab
+                type="button"
+                :class="$tab.isSelected ? 'border-b-white  text-white' : 'border-transparent text-zinc-400'"
+                class="inline-flex border-b px-5 py-2.5">Overview</button
+              >
+              <button
+                x-tabs:tab
+                type="button"
+                :class="$tab.isSelected ? 'border-white  border-b text-white' : 'border-transparent text-zinc-400'"
+                class="inline-flex border-b px-5 py-2.5"
+                >Application form</button
+              >
+            </div>
+            <div
+              x-tabs:panels
+              class="rounded-b-md border-t border-zinc-700 w-full"
+            >
+              <div x-tabs:panel class="pt-8">
+                <div
+                  class="mx-auto prose-lg prose text-zinc-400 prose-h3:text-white prose-a:font-semibold prose-a:text-sky-300 hover:prose-a:text-white prose-blockquote:text-zinc-300 prose-blockquote:text-base lg:col-span-2"
+                >
+                  <p>
+                    At buio., we are on a mission to create a new standard for
+                    modern software development. We are building the tools that
+                    empower the next generation of high-impact companies to do
+                    their best work. buio. is designed based on the practices
+                    and processes that distinguish world-class product teams
+                    from the rest: relentless focus, fast execution, and a
+                    commitment to the quality of craft.
+                  </p>
+                  <p>
+                    Founded in 2019, buio. has become the default tool of choice
+                    for high-performance teams to build their products. Set up
+                    as a fully remote company from the start, our team is
+                    currently distributed across a variety of countries across
+                    the US, Latin America and Europe (we hire within US/EU
+                    timezones). We are a diverse team of individuals, all makers
+                    at heart. We love picking up new challenges and care deeply
+                    about the quality of our work.
+                  </p>
+                  <p>
+                    As a small team, we’re all generalists and constantly
+                    picking up new challenges. When it comes to code, we’re
+                    looking to work with experienced people who can pick a
+                    problem and solve it. We use TypeScript and build scalable
+                    systems so we can continuously make progress on a solid
+                    foundation. We don’t expect you to have a background in
+                    everything we use, but we do expect strong JavaScript
+                    fundamentals and a background working with React, and
+                    ideally TypeScript.
+                  </p>
+                  <h3>What you will do</h3>
+                  <ul>
+                    <li>
+                      Work with engineers and designer to build new user-facing
+                      features which touch everything from database models, to
+                      APIs and React UI
+                    </li>
+                    <li>Diagnose and improve application performance</li>
+                    <li>
+                      Add real-time collaborative editing to our content editor
+                    </li>
+                    <li>
+                      Add analytics, monitoring, and alerts to our service so
+                      that we can better respond to operational incidents
+                    </li>
+                    <li>
+                      Open-source any non-trivial innovations that come out of
+                      our work on the product
+                    </li>
+                  </ul>
+                  <h3>Tech</h3>
+                  <ul>
+                    <li>
+                      React frontend with Styled Components, utilizing hooks for
+                      the composability of functionality
+                    </li>
+                    <li>
+                      Proprietary data synchronization library built for speed
+                      and offline support. Delta-packets are transported using
+                      WebSockets
+                    </li>
+                    <li>MobX for binding the data model to the UI</li>
+                    <li>Prosemirror-based content editor</li>
+                    <li>Electron desktop application</li>
+                    <li>
+                      Public GraphQL API that has access to all of the user's
+                      data
+                    </li>
+                    <li>Node, Postgres and Redis in the backend</li>
+                    <li>Hosted on Google Cloud with k8s</li>
+                    <li>GitHub, Slack, Notion</li>
+                    <li>Design system with React component library</li>
+                  </ul>
+                  <h3>What we offer</h3>
+                  <ul>
+                    <li>Interesting and challenging work</li>
+                    <li>An experienced team to learn from</li>
+                    <li>Work life balance</li>
+                    <li>Competitive salary and equity</li>
+                    <li>
+                      Employee-friendly equity terms (early exercise, extended
+                      exercise)
+                    </li>
+                    <li>Macbook Pro, 5K display and accessories</li>
+                    <li>Stipend to set up your home office</li>
+                    <li>Paid lunch and coffee during work days</li>
+                    <li>Work remotely, no commuting to the office</li>
+                    <li>Paid co-working space/desk at an office</li>
+                    <li>Health, dental and vision insurance</li>
+                    <li>Regular team events and offsites</li>
+                    <li>5 weeks paid vacation</li>
+                    <li>4 months paid parental leave</li>
+                  </ul>
+                  <div
+                    class="inline-flex flex-wrap items-center gap-3 mt-8 lg:gap-12 not-prose w-full"
+                  >
+                    <div
+                      class="p-0.5 rounded-full bg-silverBg cursor-pointer shadow-thick hover:shadow-none transition duration-500 ease-in-out transform w-full"
+                    >
+                      <a
+                        href="#form"
+                        type="a"
+                        class="inline-flex items-center justify-center w-full px-6 py-4 text-center text-white transition duration-500 ease-in-out transform rounded-full bg-dark border-8 border-black hover:border-zinc-900 focus:outline-none focus:ring-2 focus:ring-offset-4 ring-offset-black focus:bg-black focus:ring-blue-300 hover:text-sky-300"
+                      >
+                        Apply for this job
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div x-tabs:panel class="pt-8" id="form">
+                <div class="w-full mx-auto">
+                  <form action="#" class="w-full">
+                    <input
+                      autocomplete="false"
+                      name="hidden"
+                      type="text"
+                      style="display:none;"
+                    />
+
+                    <input type="hidden" name="_redirect" value="#" />
+                    <div class="mt-4 space-y-6">
+                      <div class="">
+                        <label
+                          name="name"
+                          class="block mb-3 text-sm font-medium text-white"
+                        >
+                          First name
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Your name"
+                          class="block w-full px-3 py-2 border border-transparent rounded-md appearance-none text-sky-300 placeholder-white/50 bg-white/5 focus:border-sky-300 focus:bg-transparent focus:outline-none focus:ring-sky-300 sm:text-sm placeholder-zinc-500"
+                        />
+                      </div>
+
+                      <div class="col-span-full">
+                        <label
+                          name="email"
+                          class="block mb-3 text-sm font-medium text-white"
+                        >
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          autocomplete="off"
+                          placeholder="email@example.com"
+                          class="block w-full px-3 py-2 border border-transparent rounded-md appearance-none text-sky-300 placeholder-white/50 bg-white/5 focus:border-sky-300 focus:bg-transparent focus:outline-none focus:ring-sky-300 sm:text-sm placeholder-zinc-500"
+                        />
+                      </div>
+                      <div>
+                        <div>
+                          <label
+                            name="message"
+                            class="block mb-3 text-sm font-medium text-white"
+                            >Cover letter</label
+                          >
+                          <div class="mt-1">
+                            <textarea
+                              rows="4"
+                              placeholder="What are you working on?"
+                              class="block w-full px-3 py-2 border border-transparent rounded-md appearance-none text-sky-300 placeholder-white/50 bg-white/5 focus:border-sky-300 focus:bg-transparent focus:outline-none focus:ring-sky-300 sm:text-sm placeholder-zinc-500"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <label
+                          for="cover-photo"
+                          class="block mb-3 text-sm font-medium text-white"
+                          >Cover photo</label
+                        >
+                        <div class="mt-1 sm:col-span-2 sm:mt-0 w-full">
+                          <div
+                            class="flex justify-center rounded-md border border-dashed border-zinc-400 px-6 pt-5 pb-6"
+                          >
+                            <div class="space-y-3 text-center py-6">
+                              <div class="flex text-sm text-zinc-400">
+                                <label
+                                  for="file-upload"
+                                  class="relative cursor-pointer transition duration-500 ease-in-out transform -ml-px inline-flex items-center border border-zinc-700 dark px-4 py-2 text-xs rounded-full bg-dark font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+                                >
+                                  <span>Upload a file</span>
+                                  <input
+                                    id="file-upload"
+                                    name="file-upload"
+                                    type="file"
+                                    class="sr-only"
+                                  />
+                                </label>
+                                <p class="pl-1">or drag and drop</p>
+                              </div>
+                              <p class="text-xs text-zinc-400">
+                                PNG, JPG, GIF up to 10MB
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-full">
+                        <label
+                          name="email"
+                          class="block mb-3 text-sm font-medium text-white"
+                        >
+                          Portfolio
+                        </label>
+                        <input
+                          type="text"
+                          autocomplete="off"
+                          placeholder="Your site"
+                          class="block w-full px-3 py-2 border border-transparent rounded-md appearance-none text-sky-300 placeholder-white/50 bg-white/5 focus:border-sky-300 focus:bg-transparent focus:outline-none focus:ring-sky-300 sm:text-sm placeholder-zinc-500"
+                        />
+                      </div>
+                      <div class="col-span-full">
+                        <label
+                          name="email"
+                          class="block mb-3 text-sm font-medium text-white"
+                        >
+                          Linkedin
+                        </label>
+                        <input
+                          type="text"
+                          autocomplete="off"
+                          placeholder="your link"
+                          class="block w-full px-3 py-2 border border-transparent rounded-md appearance-none text-sky-300 placeholder-white/50 bg-white/5 focus:border-sky-300 focus:bg-transparent focus:outline-none focus:ring-sky-300 sm:text-sm placeholder-zinc-500"
+                        />
+                      </div>
+                      <div class="col-span-full">
+                        <span class="block mb-3 text-sm font-medium text-white">
+                          Are you based in a US, EU or equivalent timezone?
+                        </span>
+                        <span class="isolate inline-flex rounded-2xl mt-3">
+                          <a
+                            type="button"
+                            class="relative transition duration-500 cursor-pointer ease-in-out transform inline-flex items-center rounded-l-full border border-zinc-700 bg-dark px-4 py-2 text-xs font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+                            >Yes</a
+                          >
+                          <a
+                            type="button"
+                            class="relative transition duration-500 cursor-pointer ease-in-out transform -ml-px inline-flex items-center rounded-r-full border border-zinc-700 dark px-4 py-2 text-xs font-light text-white hover:bg-metal focus:z-10 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+                            >No</a
+                          >
+                        </span>
+                      </div>
+                      <div class="col-span-full">
+                        <label
+                          name="email"
+                          class="block mb-3 text-sm font-medium text-white"
+                        >
+                          What country are you based in?
+                        </label>
+                        <input
+                          type="text"
+                          autocomplete="off"
+                          placeholder="your country"
+                          class="block w-full px-3 py-2 border border-transparent rounded-md appearance-none text-sky-300 placeholder-white/50 bg-white/5 focus:border-sky-300 focus:bg-transparent focus:outline-none focus:ring-sky-300 sm:text-sm placeholder-zinc-500"
+                        />
+                      </div>
+                      <div class="col-span-full">
+                        <div
+                          class="p-0.5 rounded-full bg-rainbowBg cursor-pointer transition duration-500 ease-in-out transform mt-8"
+                        >
+                          <a
+                            href="/overview"
+                            type="a"
+                            class="inline-flex items-center w-full px-6 lg:px-12 py-2.5 text-center text-white transition duration-500 ease-in-out transform rounded-full bg-dark border-8 border-black hover:border-zinc-900 justify-center focus:outline-none focus:ring-2 focus:ring-offset-4 ring-offset-black focus:bg-black focus:ring-sky-300 hover:text-sky-300"
+                          >
+                            Submit application
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>

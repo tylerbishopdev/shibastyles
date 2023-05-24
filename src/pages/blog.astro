@@ -1,0 +1,78 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import CtaThree from "../components/ctas/CtaThree.astro";
+import EntriesOne from "../components/entries/EntriesOne.astro";
+
+const allPosts = await getCollection("posts");
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<AstroSeo
+  description="Your site description goes here"
+  canonical="https://www.lexingtonthemes.com"
+  openGraph={{
+    url: "https://www.lexingtonthemes.com",
+    title: "Open Graph Title",
+    description: "Open Graph Description",
+    images: [
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Social open graph",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg",
+        width: 4096,
+        height: 4096,
+        alt: "Twitter open graph",
+        type: "image/jpeg",
+      },
+      { url: "https://www.lexingtonthemes.com/opengraph/social-og.jpg" },
+      { url: "https://www.lexingtonthemes.com/opengraph/twitter-og.jpg" },
+    ],
+    site_name: "YourSitesName",
+  }}
+  twitter={{
+    handle: "@TwitterHandle",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <section>
+    <div
+      class="relative items-center w-full px-8 mb-12 mt-24 lg:my-24 mx-auto md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl">
+      <p
+        class="text-4xl font-black tracking-tight text-white uppercase italic lg:text-13xl font-display">
+        <span> Buio Blog</span>
+      </p>
+
+      <div class="mx-auto text-lg 2xl:max-w-7xl mt-24">
+        <ol
+          role="list"
+          class="grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2">
+          {
+            allPosts
+              .slice()
+              .map((post) => (
+                <EntriesOne
+                  url={"/posts/" + post.slug}
+                  title={post.data.title}
+                  description={post.data.description}
+                  alt={post.data.title}
+                  pubDate={post.data.pubDate.toString().slice(0, 10)}
+                  author={post.data.author}
+                  image={post.data.image.url}
+                />
+              ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+  <CtaThree />
+</BaseLayout>

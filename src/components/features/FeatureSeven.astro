@@ -1,0 +1,148 @@
+<section aria-labelledby="feature-seven">
+  <h2 class="sr-only" id="feature-seven">Feature seven</h2>
+  <div
+    class="items-center px-8 py-12 lg:py-32 mx-auto md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl">
+    <div class="max-w-xl">
+      <span class="text-white">Feature Seven</span>
+      <h2
+        class="text-3xl lg:text-5xl font-semibold mt-6 text-white font-display">
+        Building blocks for your next website
+      </h2>
+      <p class="mt-5 font-light text-zinc-400 text-xl">
+        Or for your next indie project, because your MVP doesn't need to look
+        like crap.
+      </p>
+    </div>
+
+    <div x-data x-tabs class="mx-auto mt-12">
+      <div
+        x-tabs:list
+        class="-mb-px flex items-stretch flex-col gap-12"
+        role="tablist"
+        aria-orientation="horizontal">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <div class="relative">
+            <h3>
+              <button
+                x-tabs:tab
+                type="button"
+                :class="$tab.isSelected ? ' text-sky-300' : 'text-zinc-400 '"
+                class="inline-flex [&:not(:focus-visible)]:focus:outline-none"
+                ><span class="absolute inset-0"> </span>Prebuilt blocks and
+                pages
+              </button>
+            </h3>
+            <p class="mt-2 font-display text-xl text-white">
+              More than 20 prebuilt pages
+            </p>
+            <p class="mt-4 text-sm text-zinc-400">
+              Who are you calling spook, pecker-wood. What? That's a Florence
+              Nightingale effect. It happens in hospitals when nurses fall in
+              love with their patients. Go to it, kid. Marty, such a nice name.
+            </p>
+          </div>
+
+          <div class="relative opacity-75 hover:opacity-100">
+            <h3>
+              <button
+                x-tabs:tab
+                type="button"
+                :class="$tab.isSelected ? 'text-sky-300 ' : 'text-zinc-400 '"
+                class="inline-flex [&:not(:focus-visible)]:focus:outline-none"
+                ><span class="absolute inset-0"> </span>Compression</button
+              >
+            </h3>
+            <p class="mt-2 font-display text-xl text-white">
+              Compressed files on the fly
+            </p>
+            <p class="mt-4 text-sm text-zinc-400">
+              Who are you calling spook, pecker-wood. What? That's a Florence
+              Nightingale effect. It happens in hospitals when nurses fall in
+              love with their patients. Go to it, kid. Marty, such a nice name.
+            </p>
+          </div>
+          <div class="relative opacity-75 hover:opacity-100">
+            <h3>
+              <button
+                x-tabs:tab
+                type="button"
+                :class="$tab.isSelected ? 'text-sky-300 ' : 'text-zinc-400 '"
+                class="inline-flex [&:not(:focus-visible)]:focus:outline-none"
+                ><span class="absolute inset-0"> </span>SEO
+              </button>
+            </h3>
+            <p class="mt-2 font-display text-xl text-white">Prepared for SEO</p>
+            <p class="mt-4 text-sm text-zinc-400">
+              According to the flyer, at !0:04 pm lightning will strike the
+              clocktower sending one point twenty-one gigawatts into the
+              flux-capacitor, sending you back to 1985.
+            </p>
+          </div>
+        </div>
+
+        <div
+          x-tabs:panels
+          class="rounded-b-md lg:p-10 lg:bg-metal lg:rounded-3xl hidden lg:block">
+          <section x-tabs:panel>
+            <div
+              class="px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none"
+              style="transform: tranzincX(0%);"
+              aria-hidden="false"
+              id="headlessui-tabs-panel-:Rbbdm:"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="headlessui-tabs-tab-:Rirdm:">
+              <div
+                class="w-full overflow-hidden rounded-3xl border border-zinc-700 shadow-superThick">
+                <img
+                  alt=""
+                  src="/images/placeholders/ChartOne.png"
+                  class="w-full"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section x-tabs:panel>
+            <div
+              class="px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none"
+              style="transform: tranzincX(0%);"
+              aria-hidden="false"
+              id="headlessui-tabs-panel-:Rbbdm:"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="headlessui-tabs-tab-:Rirdm:">
+              <div
+                class="w-full overflow-hidden rounded-3xl border border-zinc-700 shadow-superThick">
+                <img
+                  alt=""
+                  src="/images/placeholders/ChartTwo.png"
+                  class="w-full"
+                />
+              </div>
+            </div>
+          </section>
+          <section x-tabs:panel>
+            <div
+              class="px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none"
+              style="transform: tranzincX(0%);"
+              aria-hidden="false"
+              id="headlessui-tabs-panel-:Rbbdm:"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="headlessui-tabs-tab-:Rirdm:">
+              <div
+                class="w-full overflow-hidden rounded-3xl border border-zinc-700 shadow-superThick">
+                <img
+                  alt=""
+                  src="/images/placeholders/ChartThree.png"
+                  class="w-full"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+{
+  "name": "@lexington/buio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/image": "^0.13.0",
+    "@astrojs/tailwind": "^3.1.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/alpinejs": "^3.7.1",
+    "astro": "^2.1.7"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.14.0",
+    "@astrojs/rss": "^2.3.1",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrolib/seo": "^0.3.0",
+    "astro-compress": "^1.1.25",
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
+}
