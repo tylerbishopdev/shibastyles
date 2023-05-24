@@ -1,4 +1,4 @@
-# Astro / Sanity / Tailwind project customized for use by Ezoic
+# Astro / Tailwind project playground customized for use by Ezoic
 
 An Ezoic marketing project folder with custom config for use as a front-end marketing site with connections that easily link our products and content.
 
@@ -16,7 +16,6 @@ An Ezoic marketing project folder with custom config for use as a front-end mark
     "@astrojs/sitemap": "^1.0.0",
     "@astrolib/seo": "^0.3.0",
     "astro-compress": "^1.1.25",
-    "astro-sanity": "^1.1.3",
     "tailwind-scrollbar-hide": "^1.1.7"
 
 ## Structure
@@ -29,12 +28,7 @@ Here's the main folders and files.
 ├── src/ <— where all front-end styles, components, layouts, scripts, and pages should be
 │   └── pages/ <— where all pages and posts are constructed
 │       └── index.astro <- home page
-└── sanity/ <- location where Sanity CMS and it's config (all inside folder)
-    └── studio/ <- Sanity Studio folder
-        └── public/ <- where Sanity Studio assets are stored
-        └── src/ <- where Sanity Studio components are stored
-        └── sanity.json <- Sanity Studio config file
-    └── schemas/ <- where Sanity CMS schemas are stored
+
 └── tailwind.config.js <- Tailwind CSS config file
 └── package.json <- Astro dependencies
 ```
@@ -58,14 +52,9 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-## Accessing Sanity Studio
-| --- cd ./sanity ----
 
-`npm sanity` or 'npm run dev;' | will start Sanity Studio  on https://localhost:3333  |
-
-## Docs for Tailwind, Astro, and Sanity for reference
+## Docs for Tailwind, Astro
 
 Astro Docs: (https://docs.astro.build)
 Tailwind Docs & References: https://tailwindcss.com/doc
-Sanity Docs: https://sanity.io/docs
 Tailwind Components:  https://tailwindui.com/
