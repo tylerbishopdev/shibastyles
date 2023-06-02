@@ -24,6 +24,12 @@
     "@astrojs/sitemap": "^1.0.0",
     "@astrolib/seo": "^0.3.0",
     "astro-compress": "^1.1.25",
+    "astro-layouts": "^1.0.0",
+    "rehype": "^12.0.1",
+    "rehype-components": "github:marekweb/rehype-components",
+    "rehype-slots": "github:marekweb/rehype-slots",
+    "remark": "^14.0.3",
+    "remark-code-blocks": "^2.0.1",
     "tailwind-scrollbar-hide": "^1.1.7"
   }
 }

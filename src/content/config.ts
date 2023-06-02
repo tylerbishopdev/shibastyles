@@ -10,7 +10,10 @@ const postsCollection = defineCollection({
         url: z.string(),
         alt: z.string()
       }),
-      tags: z.array(z.string())
+      tags: z.array(z.string()),
+      slug: z.string(),
+      canonicalURL: z.string().url(),
+      
     })
  });
 
