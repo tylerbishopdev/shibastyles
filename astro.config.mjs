@@ -19,7 +19,7 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://lexingtonthemes.com',
+  site: 'https://era.ezoic.com',
   integrations: [tailwind(), image(), compress(), sitemap(), mdx()],
 
 

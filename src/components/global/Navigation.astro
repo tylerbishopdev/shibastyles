@@ -1,114 +1,106 @@
-
+<!--Navigation.astro — universal navigation menu-->
 <header class="bg-black">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-6" aria-label="Global">
-    <div class="flex lg:flex-1">
-      <a href="" class="-m-1.5 p-1.5">
-        <span class="sr-only">Ezoic</span>
-        <img class="h-10 w-auto" src="/images/placeholders/ezoic-dark.png" alt="ezoic">
+  <!-- This is the light and dark theme component below this line-->
+<div class="w-3/4 mx-auto pt-6 my-auto">
+    
+  <nav>
+    <!--Container that houses all items in the menu-->
+  <div class="container mx-auto flex flex-wrap items-center justify-between my-auto"> 
+    <!--Logo and associated link-->
+      <a href="#" class="flex">
+     <img src="public/images/placeholders/ezoic-dark.png" alt="ezoic" class="w-32">
       </a>
-    </div>
-    <div class="flex lg:hidden">
-      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
-        <span class="sr-only">Open main menu</span>
-        <svg class="h-6 w-6" fill="bg-black" viewBox="0 0 24 24" stroke-width="1.5" stroke="bg-grey-900" aria-hidden="false">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+       <!--Menu and Mobile Menu base traits-->
+      <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 text-white hover:text-ezgreen1 focus:outline-none rounded-sm inline-flex items-center justify-center bg-stone-900" aria-controls="mobile-menu-2" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
       </button>
-    </div>
-    <div class="hidden lg:flex lg:gap-x-10">
-
-      <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white" aria-expanded="false">
-        Products
-        <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-        </svg>
-      </button>
-      <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white" aria-expanded="false">
-       About
-        <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-        </svg>
-      </button>
-      <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white " aria-expanded="false"  >
-       Resources
-        <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-        </svg>
-      </button>
-      
-   
-      <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white bg-white/0 px-3 py-2 rounded-md  hover:bg-white/20 hover:border-bg-white">
-        Login  
-        </button>
-     
-       
-        <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 px-3 py-2 rounded  text-ezgreen2/90 border-2 border-ezgreen3/0 hover:text-black hover:bg-ezgreen2/75">
-        
-        Get Started
-        <svg class="-ml-0.5 left-5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h4.59l-2.1 1.95a.75.75 0 001.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 10-1.02 1.1l2.1 1.95H6.75z" clip-rule="evenodd" /></svg>
-      </button>
-   
-  </div>
-  <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="lg:hidden" role="dialog" aria-modal="true">
-    <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-10"></div>
-    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-      <div class="flex items-center justify-between">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
-        </a>
-        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Close menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="mt-6 flow-root">
-        <div class="-my-6 divide-y divide-gray-500/10">
-          <div class="space-y-2 py-6">
-            <div class="-mx-3">
-              <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
-                Product
-                <!--
-                  Expand/collapse icon, toggle classes based on menu open state.
-
-                  Open: "rotate-180", Closed: ""
-                -->
-                <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                </svg>
-              </button>
-              <!-- 'Product' sub-menu, show/hide based on menu state. -->
-              <div class="mt-2 space-y-2" id="disclosure-1">
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Analytics</a>
-
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Engagement</a>
-
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Security</a>
-
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Integrations</a>
-
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Automations</a>
-
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Watch demo</a>
-
-                <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-gray-50">Contact sales</a>
-              </div>
+       <!--Mobile menu traits only-->
+      <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+      <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:items-center">
+         <!--Item 1 menu attributes for all devices-->
+          <li>
+            <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1" class="text-white hover:bg-transparent border-b border-ezgreen1/10 md:hover:bg-ezgreen-2 text-sm md:border-0 pl-3 pr-4 py-2 md:hover:text-ezgreen1 md:p-0 flex items-center justify-between w-full md:w-auto">Products <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar1" class="hidden bg-stone-900 rounded shadow my-4 w-44"> 
+                <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                    <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Ezoic Ads</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Big Data Analytics</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm2">Site Speed</a>
+                </li>
+                </ul>
+                <div class="py-1">
+                <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">All Products</a>
+                </div>
             </div>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Features</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Marketplace</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50">Company</a>
-          </div>
-          <div class="py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50">Log in</a>
-          </div>
+        </li>
+        <!--Item 2 menu attributes for all devices-->
+        <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2" class="text-white hover:bg-stone-900/90 border-b border-ezgreen1/10 md:hover:bg-transparent md:border-0 pl-3 text-sm pr-4 py-2 md:hover:text-ezgreen1 md:p-0 flex items-center justify-between w-full md:w-auto">About <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+        <!-- Dropdown menu -->
+        <div id="dropdownNavbar2" class="hidden bg-stone-900 rounded shadow my-4 w-44">
+            <ul class="py-1" aria-labelledby="dropdownLargeButton">
+            <li>
+                <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Our Company</a>
+            </li>
+            <li>
+                <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Press</a>
+            </li>
+            <li>
+                <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm2">Careers</a>
+            </li>
+            </ul>
         </div>
-      </div>
-    </div>
+    </li>
+    <!--Item 3 menu attributes for all devices-->
+              <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3" class="text-white hover:bg-stone-900/90 border-b border-ezgreen1/10 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-ezgreen1 md:p-0 text-sm flex items-center justify-between w-full md:w-auto">Resources<svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar3" class="hidden bg-stone-900 rounded shadow my-4 w-44">
+                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                  <li>
+                      <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Support</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Ad Revenue Index</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm2">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm2">Studies & Research</a>
+                </li>
+                  </ul>
+                 
+                  <a href="#" class="text-sm hover:bg-ezgreen1/60 text-white block px-4 py-2 rounded-sm">Pricing</a>
+                  
+              </div>
+          </li>
+          <li>
+            <!--Non-drop down items in Nav menu attributes for all devices-->
+          <a href="#" class="text-sm text-white hover:bg-gezgreen2/60 border-b border-ezgreen2 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:ezgreen2 hover:text-ezgreen2/60 md:p-0">Blog</a>
+          </li>
+          <!--Login item unique attributes-->
+          <li>
+          <a href="#" class="text-sm text-ezgreen2 hover:bg-ezgreen3/10 border-ezgreen2 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-ezgreen2/60 hover:text-ezgreen2 md:p-0">Login</a>
+          </li>
+          <!--CTA button-->
+          <li>
+            <a href="#" class="text-center text-sm md:bg-ezgreen/80 text-black hover:bg-ezgreen2/20 border border-ezgreen2 md:border md:py-1 rounded-sm md:px-2 pl-2 pr-2 block py-1 md:hover:text-ezgreen2/80 bg-ezgreen2/80 hover:text-ezgreen2/90 md:hover:bg-ezgreen2/10 w-24 items-start">Join Now</a>
+            </li>
+       
+      </ul>
+      
+      
   </div>
-</nav>
+  
+  </nav>
+</div>
 </header>
+<!--end of navigation menu - script below is what provides the open and close state changes for all the menu dropdown functions on every device -->
+
+<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
